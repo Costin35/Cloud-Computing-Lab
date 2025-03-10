@@ -37,10 +37,10 @@ async function createUser(req, res){
     req.on('end', async () => {
         const { name, email } = JSON.parse(body);
         try {
-            const query = 'INSERT INTO users (name, email) VALUES ($1, $2)';
+            const query = 'INSERT INTO users (name, email) VALUES ($1, $2) RETURNING *';
             const values = [name, email];
             const result = await client.query(query, values);
-            res.writeHead(201);
+            res.writeHead(201, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify(result.rows[0]));
         } catch (error) {
             res.writeHead(500);
