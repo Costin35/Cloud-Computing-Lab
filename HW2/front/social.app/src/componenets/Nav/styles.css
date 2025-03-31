@@ -1,0 +1,55 @@
+.Nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid #333;
+    font-size: 2em;
+    background-color: rgb(58, 57, 57);
+}
+
+.searchForm {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
+}
+
+.searchForm input {
+    flex-grow: 1;
+    font-size: 1rem;
+    padding: 0.25rem;
+    margin-right: 0.25rem;
+    background-color: rgb(58, 57, 57);
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li {
+    padding: 0.2em;
+    margin-right: 0.5em;
+}
+
+li a,
+li a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+li a:hover{
+    background: rgb(46, 45, 45);
+    cursor: pointer;
+}
+
+li a:focus {
+    outline: none;
+}

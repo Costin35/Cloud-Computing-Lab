@@ -1,0 +1,36 @@
+.jokes-container {
+    margin: 20px auto;
+    padding: 50px;
+    display: flex;
+}
+
+.jokes-header {
+    font-size: 18 px;
+    margin: 20px;
+    color: whitesmoke;
+}
+
+.jokes-list {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+}
+
+.joke-card {
+    flex-grow: 1;
+    min-width: 1300px;
+    background-color: rgb(46, 45, 45);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.joke-category {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+  

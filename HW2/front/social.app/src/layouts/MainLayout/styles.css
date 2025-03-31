@@ -1,0 +1,7 @@
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(58, 57, 57);
+    color: whitesmoke;
+}

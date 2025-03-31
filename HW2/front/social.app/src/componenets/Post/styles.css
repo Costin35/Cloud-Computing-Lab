@@ -1,0 +1,67 @@
+.post{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "user date"
+    "body body"
+    ". actions";
+    margin: 2rem 3rem;
+    padding: 1rem 1rem;
+    background-color: rgb(75, 75, 80);
+}
+
+.postUser{
+    text-decoration: none;
+    color: whitesmoke;
+    grid-area: user;
+}
+
+.postDate {
+    grid-area: date;
+    color: whitesmoke;
+    text-align: right;
+}
+
+.postBody{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    grid-area:body;
+    color: whitesmoke;
+}
+
+.postActions {
+    grid-area: actions;
+    align-self: end;
+    justify-self: end;
+}
+
+.postActions button {
+    margin-left: 0.5rem;
+    background: none;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.editArea {
+    grid-area: body; 
+    margin-top: 1rem;
+}
+
+.postActions .editBtn:hover {
+    color: royalblue;
+}
+
+.postActions .deleteBtn:hover{
+    color: red;
+}
+
+.editArea textarea{
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #333;
+    background: rgb(75, 73, 73);
+    color: whitesmoke;
+}

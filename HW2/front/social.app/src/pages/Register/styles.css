@@ -1,0 +1,42 @@
+.Register {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 2rem 2rem;
+}
+
+.RegisterForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem 3rem;
+    font-size: 1.5rem;
+    background-color: rgb(70, 70, 70);
+}
+
+.RegisterForm input {
+    margin: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    background-color: rgb(90, 90, 90);
+    color: whitesmoke;
+}
+
+.RegisterForm button {
+    margin: 1rem 1rem;
+    padding: 0.5rem;
+    font-size: 1em;
+    background-color: rgb(58, 57, 57);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.RegisterForm button:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+.RegisterForm button:focus {
+    outline: none;
+}

@@ -1,0 +1,14 @@
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(58, 57, 57);
+    color: whitesmoke;
+}
+
+.layout-no-nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
